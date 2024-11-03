@@ -11,14 +11,14 @@ const setMouseDown = () => {
 <template>
   <section>
     <ul
-      class="grid grid-col-32 grid-rows-32 grid-flow-col size-[72rem]"
+      class="grid grid-flow-col grid-col-32 grid-rows-32 size-fit"
       @mousedown="setMouseDown"
       @mouseup="setMouseDown"
     >
       <template v-for="(row, rowIDX) in gridStore.gridColors" class="flex">
         <div
           v-for="(col, colIDX) in row"
-          class="border-2 border-black hover:bg-slate-400"
+          class="transition-transform duration-150 border-2 cursor-pointer border-slate-950 hover:bg-slate-400 size-8 hover:scale-[1.2]"
           :class="col"
           @mouseover="
             gridStore.setCellColor(

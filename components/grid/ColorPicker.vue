@@ -4,14 +4,15 @@ import { colorPickerStore } from "~/store/colorPickerStore";
 
 <template>
   <section>
-    <ul class="grid grid-cols-3 grid-rows-12 grid-flow-row h-fit w-fit gap-1.5">
-      <li v-for="color in COLOR_PALETTE">
-        <p
-          class="p-8 border-2"
-          :class="color"
-          @click="colorPickerStore.setSelectedColor(color)"
-        ></p>
-      </li>
+    <ul
+      class="grid grid-flow-row grid-cols-3 gap-1 p-2 border-2 shadow-xl border-slate-400 grid-rows-12 h-fit w-fit"
+    >
+      <li
+        v-for="color in COLOR_PALETTE"
+        class="duration-150 border-2 cursor-pointer size-16 border-slate-950 hover:scale-105"
+        :class="color"
+        @click="colorPickerStore.setSelectedColor(color)"
+      />
     </ul>
   </section>
 </template>
