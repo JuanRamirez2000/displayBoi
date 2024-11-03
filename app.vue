@@ -10,12 +10,6 @@ const setSelectedColor = (color: string) => {
 
 <template>
   <main class="flex flex-row">
-    <section>
-      <GridEditableGrid />
-    </section>
-    <section>
-      <GridColorPicker />
-      <GridClearBoardButton />
-    </section>
+    <GridEditableGrid />
   </main>
 </template>
