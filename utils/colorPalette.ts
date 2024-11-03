@@ -1,3 +1,5 @@
+const BASE_COLOR: string = "bg-slate-50";
+
 const COLOR_PALETTE: string[] = [
   //https://lospec.com/palette-list/apollo
   //Tailwind Slate
@@ -52,4 +54,4 @@ const COLOR_PALETTE: string[] = [
   "bg-violet-700",
 ];
 
-export { COLOR_PALETTE };
+export { COLOR_PALETTE, BASE_COLOR };
